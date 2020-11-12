@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "download": "https://github.com/ErlinEmrys/FoundryVTT_DrDPlus/releases/download/0.0.1/DrDPlus.zip",
   "url": "https://github.com/ErlinEmrys/FoundryVTT_DrDPlus",
-  "manifest": "https://raw.githubusercontent.com/ErlinEmrys/FoundryVTT_DrDPlus/master/system.json",
+  "manifest": "https://raw.githubusercontent.com/ErlinEmrys/FoundryVTT_DrDPlus/main/src/system.json",
   "author": "Erlin",
   "authors": [
     {
