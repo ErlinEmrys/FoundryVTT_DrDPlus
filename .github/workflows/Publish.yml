@@ -11,6 +11,11 @@ jobs:
     steps: 
       - uses: actions/checkout@v2
 
+      - name: Build
+        script: |
+          npm install
+          gulp build
+
       - name: Zip Files
         working-directory: ./dist
         run: zip -r ./DrDPlus.zip ./*
