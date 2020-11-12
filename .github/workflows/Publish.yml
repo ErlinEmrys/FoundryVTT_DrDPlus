@@ -35,5 +35,5 @@ jobs:
           draft: false
           prerelease: false
           token: ${{secrets.GITHUB_TOKEN}}
-          artifacts: './DrDPlus.zip'
+          artifacts: './dist/DrDPlus.zip'
           tag: ${{ steps.get-version.outputs.version }}
