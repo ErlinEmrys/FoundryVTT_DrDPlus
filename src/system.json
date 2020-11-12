@@ -3,6 +3,9 @@
   "title": "DrD+",
   "description": "",
   "version": "0.0.1",
+  "download": "https://github.com/ErlinEmrys/FoundryVTT_DrDPlus/releases/download/0.0.1/DrDPlus.zip",
+  "url": "https://github.com/ErlinEmrys/FoundryVTT_DrDPlus",
+  "manifest": "https://raw.githubusercontent.com/ErlinEmrys/FoundryVTT_DrDPlus/master/system.json",
   "author": "Erlin",
   "authors": [
     {
@@ -20,9 +23,7 @@
   "gridUnits": "",
   "minimumCoreVersion": "0.7.6",
   "compatibleCoreVersion": "0.7.6",
-  "url": "https://github.com/ErlinEmrys/FoundryVTT_DrDPlus",
-  "manifest": "https://raw.githubusercontent.com/ErlinEmrys/FoundryVTT_DrDPlus/master/system.json",
-  "download": "https://github.com/ErlinEmrys/FoundryVTT_DrDPlus/archive/v0.0.1.zip",
+  
   "license": "",
   "readme": "",
   "bugs": "",
