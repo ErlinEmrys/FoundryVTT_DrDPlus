@@ -11,7 +11,7 @@
  */
 
 // Import TypeScript modules
-import { registerSettings } from "./Settings";
+import { registerSettings } from "./module/Settings";
 import { preloadTemplates } from './module/PreloadTemplates';
 
 /* ------------------------------------ */
