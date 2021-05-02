@@ -7,6 +7,7 @@ const stringify = require('json-stringify-pretty-compact');
 const typescript = require('typescript');
 
 const ts = require('gulp-typescript');
+const sourcemaps = require('gulp-sourcemaps');
 const less = require('gulp-less');
 const sass = require('gulp-sass');
 const git = require('gulp-git');
@@ -136,7 +137,7 @@ const tsConfig = ts.createProject('tsconfig.json', {
  * Build TypeScript
  */
 function buildTS() {
-	return gulp.src('src/**/*.ts').pipe(tsConfig()).pipe(gulp.dest('dist'));
+	return gulp.src('src/**/*.ts').pipe(sourcemaps.init()).pipe(tsConfig()).pipe(sourcemaps.write('')).pipe(gulp.dest('dist'));
 }
 
 /**
