@@ -9,7 +9,6 @@
 		"types": ["@league-of-foundry-developers/foundry-vtt-types"],
 		"moduleResolution": "node",
 		"sourceMap": true,
-		"module": "CommonJS",
 		"preserveConstEnums": true,
 	}
 }
