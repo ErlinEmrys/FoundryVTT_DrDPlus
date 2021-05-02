@@ -4,8 +4,9 @@
 		"lib": [
 			"DOM",
 			"ES6",
-			"ES2017"
+			"ES2020"
 		],
-		"types": ["foundry-pc-types"]
+		"types": ["@league-of-foundry-developers/foundry-vtt-types"],
+		"moduleResolution": "node"
 	}
 }

@@ -11,14 +11,14 @@
  */
 
 // Import TypeScript modules
-import { registerSettings } from './module/settings.js';
-import { preloadTemplates } from './module/preloadTemplates.js';
+import { registerSettings } from './module/Settings.js';
+import { preloadTemplates } from './module/PreloadTemplates.js';
 
 /* ------------------------------------ */
 /* Initialize system					*/
 /* ------------------------------------ */
 Hooks.once('init', async function() {
-	console.log('DrDPlus | Initializing DrDPlus');
+	console.log('DrD+ | Initializing DrDPlus');
 
 	// Assign custom classes and constants here
 	
