@@ -11,8 +11,8 @@
  */
 
 // Import TypeScript modules
-import { registerSettings } from './module/Settings.js';
-import { preloadTemplates } from './module/PreloadTemplates.js';
+import { registerSettings } from './module/Settings';
+import { preloadTemplates } from './module/PreloadTemplates';
 
 /* ------------------------------------ */
 /* Initialize system					*/
