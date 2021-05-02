@@ -1,4 +1,3 @@
-import { registerSettings } from "./module/Settings";
 /**
  * This is your TypeScript entry file for Foundry VTT.
  * Register custom settings, sheets, and constants using the Foundry API.
@@ -12,8 +11,8 @@ import { registerSettings } from "./module/Settings";
  */
 
 // Import TypeScript modules
-//import { registerSettings } from "./module/Settings";
-//import { preloadTemplates } from './module/PreloadTemplates';
+import { registerSettings } from "./Settings";
+import { preloadTemplates } from './module/PreloadTemplates';
 
 /* ------------------------------------ */
 /* Initialize system					*/
@@ -27,7 +26,7 @@ Hooks.once('init', async function() {
 	registerSettings();
 	
 	// Preload Handlebars templates
-	//await preloadTemplates();
+	await preloadTemplates();
 
 	// Register custom sheets (if any)
 });
