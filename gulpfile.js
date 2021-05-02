@@ -90,10 +90,10 @@ function createTransformer() {
 			function visitor(node) {
 				if (shouldMutateModuleSpecifier(node)) {
 					if (typescript.isImportDeclaration(node)) {
-						const newModuleSpecifier = typescript.createLiteral(
+						const newModuleSpecifier = typescript.factory.createLiteralTypeNode(
 							`${node.moduleSpecifier.text}.js`
 						);
-						return typescript.updateImportDeclaration(
+						return typescript.factory.updateImportDeclaration(
 							node,
 							node.decorators,
 							node.modifiers,
@@ -101,10 +101,10 @@ function createTransformer() {
 							newModuleSpecifier
 						);
 					} else if (typescript.isExportDeclaration(node)) {
-						const newModuleSpecifier = typescript.createLiteral(
+						const newModuleSpecifier = typescript.factory.createLiteralTypeNode(
 							`${node.moduleSpecifier.text}.js`
 						);
-						return typescript.updateExportDeclaration(
+						return typescript.factory.updateExportDeclaration(
 							node,
 							node.decorators,
 							node.modifiers,
@@ -137,7 +137,7 @@ const tsConfig = ts.createProject('tsconfig.json', {
  * Build TypeScript
  */
 function buildTS() {
-	return gulp.src('src/*.ts').pipe(sourcemaps.init()).pipe(tsConfig()).pipe(sourcemaps.write('')).pipe(gulp.dest('dist'));
+	return gulp.src('src/**/*.ts').pipe(sourcemaps.init()).pipe(tsConfig()).pipe(sourcemaps.write('')).pipe(gulp.dest('dist'));
 }
 
 /**
