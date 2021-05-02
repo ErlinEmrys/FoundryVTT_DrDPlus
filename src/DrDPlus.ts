@@ -1,3 +1,4 @@
+import { registerSettings } from "./module/Settings";
 /**
  * This is your TypeScript entry file for Foundry VTT.
  * Register custom settings, sheets, and constants using the Foundry API.
@@ -11,7 +12,7 @@
  */
 
 // Import TypeScript modules
-import { registerSettings } from "./module/Settings";
+//import { registerSettings } from "./module/Settings";
 //import { preloadTemplates } from './module/PreloadTemplates';
 
 /* ------------------------------------ */
