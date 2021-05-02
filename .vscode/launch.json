@@ -14,7 +14,7 @@
             "sourceMapPathOverrides": {
                 "*": "${workspaceFolder}\\src\\*"
             },
-            "trace": true
+            //"trace": true
         }
     ]
 }
