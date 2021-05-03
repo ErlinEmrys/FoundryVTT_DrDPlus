@@ -11,7 +11,7 @@
  */
 
 // Import TypeScript modules
-//import { registerSettings } from "./module/Settings";
+import { registerSettings } from "./module/Settings2";
 import { preloadTemplates } from './module/PreloadTemplates';
 
 /* ------------------------------------ */
@@ -23,7 +23,7 @@ Hooks.once('init', async function() {
 	// Assign custom classes and constants here
 	
 	// Register custom system settings
-	//registerSettings();
+	registerSettings();
 	
 	// Preload Handlebars templates
 	await preloadTemplates();
