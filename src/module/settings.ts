@@ -3,7 +3,7 @@ import { DrdActorSheet } from "./actors/DrdActorSheet";
 import { DrdItem } from "./items/DrdItem";
 import { DrdItemSheet } from "./items/DrdItemSheet";
 import { ATTRIBUTE_TYPES } from "./Constants";
-import { preloadTemplates } from "./Constants";
+import { preloadTemplates } from "./PreloadTemplates";
 
 export const registerSettings = function() {
 	
