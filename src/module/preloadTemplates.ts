@@ -12,3 +12,4 @@ export const preloadTemplates = async function() {
 }
 
 export const ATTRIBUTE_TYPES = ["String", "Number", "Boolean", "Formula", "Resource"];
+
