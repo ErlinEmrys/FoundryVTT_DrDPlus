@@ -1,3 +1,7 @@
+//export class Constants {
+//    const ATTRIBUTE_TYPES = ["String", "Number", "Boolean", "Formula", "Resource"];
+//}
+
 export const preloadTemplates = async function() {
 	const templatePaths = [
 		// Add paths to "systems/DrDPlus/templates"
