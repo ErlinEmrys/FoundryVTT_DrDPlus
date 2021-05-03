@@ -1,11 +1,13 @@
-export class DrdTemplate
+/*export class DrdTemplate
 {
-	static preloadTemplates() {/*
+	static preloadTemplates() {
 	const templatePaths = [
 		// Add paths to "systems/DrDPlus/templates"
 		"systems/DrDPlus/templates/parts/DrdAttributes.html",
 	];
 
-	return loadTemplates(templatePaths);*/
+	return loadTemplates(templatePaths);
 	}
-}
+}*/
+
+export const TEST = ["One", "Two"];
