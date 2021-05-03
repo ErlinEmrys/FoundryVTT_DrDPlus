@@ -12,7 +12,7 @@
 
 // Import TypeScript modules
 //import { registerSettings } from "./module/Settings";
-//import { preloadTemplates } from './module/PreloadTemplates';
+import { preloadTemplates } from './module/PreloadTemplates';
 
 /* ------------------------------------ */
 /* Initialize system					*/
@@ -26,7 +26,7 @@ Hooks.once('init', async function() {
 	//registerSettings();
 	
 	// Preload Handlebars templates
-	//await preloadTemplates();
+	await preloadTemplates();
 
 	// Register custom sheets (if any)
 });
