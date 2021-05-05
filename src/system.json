@@ -15,7 +15,7 @@
     }
   ],
   "scripts": [],
-  "esmodules": ["System.js"],
+  "esmodules": ["DrDPlus.js"],
   "styles": ["DrDPlus.css"],
   "packs": [],
   "languages": [],
