@@ -90,7 +90,7 @@ function createTransformer() {
 			function visitor(node) {
 				if (shouldMutateModuleSpecifier(node)) {
 					if (typescript.isImportDeclaration(node)) {
-						const newModuleSpecifier = typescript.factory.createLiteralTypeNode(
+						const newModuleSpecifier = typescript.factory.createStringLiteral(
 							`${node.moduleSpecifier.text}.js`
 						);
 						return typescript.factory.updateImportDeclaration(
@@ -101,7 +101,7 @@ function createTransformer() {
 							newModuleSpecifier
 						);
 					} else if (typescript.isExportDeclaration(node)) {
-						const newModuleSpecifier = typescript.factory.createLiteralTypeNode(
+						const newModuleSpecifier = typescript.factory.createStringLiteral(
 							`${node.moduleSpecifier.text}.js`
 						);
 						return typescript.factory.updateExportDeclaration(
